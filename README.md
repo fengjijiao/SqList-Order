@@ -1,6 +1,7 @@
 # SqList-Order
 
-##Base function
+## Base function
+
 `Status List_Init(SqListPtr L);`
 
 `void List_Destory (SqListPtr L);`
@@ -23,11 +24,12 @@
 
 `Status List_Next(SqListPtr L, int pos, ElemType *elem);`
 
-##Basic functions defined by the test
+## Basic functions defined by the test
 
 `void List_Print(SqListPtr L);`
 
-##Test function
+## Test function
+
 `Status Test_CreateList(SqListPtr list,ElemType data[],int n);`
 
 `Status Test_ClearList(SqListPtr list);`
