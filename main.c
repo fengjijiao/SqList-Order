@@ -29,6 +29,8 @@ int main() {
                 if(s!=success){
                     printf("建立线性表失败\n");
                 }
+                free(data);
+                List_Destory(&list);
                 break;
             case 2:
                 printf("线性表的长度:\n");
@@ -47,6 +49,8 @@ int main() {
                        }
                    }
                 }
+                free(data);
+                List_Destory(&list);
                 break;
             case 3:
                 printf("线性表的长度:\n");
@@ -62,6 +66,8 @@ int main() {
                     scanf("%d",pos);
                     Test_RetrivalPriorNext(list,pos);
                 }
+                free(data);
+                List_Destory(&list);
                 break;
             case 4:
                 printf("线性表的长度:\n");
@@ -77,6 +83,8 @@ int main() {
                     scanf("%d",&e);
                     Test_Locate(list,e);
                 }
+                free(data);
+                List_Destory(&list);
                 break;
             case 5:
                 printf("线性表的长度:\n");
@@ -90,6 +98,8 @@ int main() {
                 if(s==success){
                     Test_Size(list);
                 }
+                free(data);
+                List_Destory(&list);
                 break;
             case 6:
                 break;
