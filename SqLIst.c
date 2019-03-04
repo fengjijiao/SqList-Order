@@ -31,12 +31,14 @@ void List_Clear(SqListPtr L){
         L->length=0;
     }
 }
+//判斷綫性表是否為空,即表長是否為0.
 bool List_Empty(SqListPtr L){
     return (L->length==0);
 }
 int List_Size(SqListPtr L){
     return L->length;
 }
+//取出綫性表中第pos個元素,並將*elem指針指向該位置.
 Status List_Retrival(SqListPtr L, int pos, ElemType *elem){
     Status s=rang_error;
     if(L) {
